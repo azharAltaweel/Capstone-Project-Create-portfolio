@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Portfolio website to show my exercise in front-end development">
+    <meta name="keywords" content="Frontend Developer, Portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Azhar Abdalmajeed">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,13 +15,14 @@
 <header class="header">
 <div ><b >Azhar Al-taweel</b></div>
 <nav class="nav">
+<a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="main">
+<section class="main" id="about">
     <div>
         <div >Hello, I'm Azhar</div>
         <div style="color: gray; font-size: 2em;">Frontend Web Develober</div>
@@ -46,7 +49,7 @@
         <div class="Info">
             <h3> Newspaper </h3>
             <p> HTML and CSS</p>
-            <a href="http://127.0.0.1:5500/newspaper.html" class="btn">View Project</a>
+            <a href="https://github.com/azharAltaweel/color-picker/blob/main/newspaper.html" class="btn">View Project</a>
         </div>
     </div>
 
@@ -55,7 +58,7 @@
     <div class="Info">
         <h3> color Picker </h3>
         <p>  HTML and CSS </p>
-        <a href="http://127.0.0.1:5500/ColorPicker.html" class="btn">View Project</a>
+        <a href="https://github.com/azharAltaweel/color-picker/blob/main/newspaper.html" class="btn">View Project</a>
    </div>
 </div>
 
@@ -64,7 +67,7 @@
     <div class="Info">
         <h3> HTML & CSS exercises </h3>
         <p> HTML and CSS</p>
-        <a href="file:///C:/Users/User/OneDrive/Desktop/SHAI/HTML%20&%20CSS%20exercises/more-challenges/homePage.html" class="btn">View Project</a>
+        <a href="https://github.com/azharAltaweel/HTML-and-CSS-exercises" class="btn">View Project</a>
    </div>
 </div>
 
@@ -72,19 +75,23 @@
 
 </section>
 <section class="whiteSection" id="contact">
-   <h2 class="title">Contacts</h2>
+   <h2 class="title">Contact Me</h2>
    <div class="container">
-    <div class="Card">
-        <img src="img/mail.png" alt="mail ">
-        
-        <div class="Info">
-            <h3> Email </h3>
-            <p> azharabdalmajeed@gmail.com </p>
-        </div>
-    </div>
-   </div>
+       <form class="contact-form">
+           <label for="name">Name</label>
+           <input type="text" id="name" name="name" required>
 
+           <label for="email">Email</label>
+           <input type="email" id="email" name="email" required>
+
+           <label for="message">Message</label>
+           <textarea id="message" name="message" rows="5" required></textarea>
+
+           <button type="submit" class="btn">Send Message</button>
+       </form>
+   </div>
 </section>
+
 
 <footer class="footer">
     <div>"Copyrights © "
@@ -94,8 +101,11 @@
     <div class="social">
     <a href="https://github.com/settings/apps"><img src="img/github.png" alt="github"></a>
     <a href="https://www.linkedin.com/in/azhar-a-501133261/"><img src="img/linkedin.png" alt="linkedin"></a>
+    <a href="mailto:azharabdalmajeed@gmail.com"><img src="img/mail.png" alt="gmail"></a>
+
    </div>
 
 </footer>
 </body>
 </html>
+
